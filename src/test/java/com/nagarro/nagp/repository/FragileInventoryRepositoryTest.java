@@ -30,6 +30,10 @@ public class FragileInventoryRepositoryTest {
 		PowerMockito.mockStatic(RepositoryHelper.class);
 		when(RepositoryHelper.saveFragile(Mockito.any(Inventory.class))).thenReturn(expectedValue);
 		Inventory actualValue = this.repository.save(expectedValue);
+
+		PowerMockito.verifyStatic();
+		RepositoryHelper.saveFragile(expectedValue);
+
 		MatcherAssert.assertThat(actualValue, equalTo(expectedValue));
 		MatcherAssert.assertThat(actualValue.getCategory(), equalTo(expectedValue.getCategory()));
 	}

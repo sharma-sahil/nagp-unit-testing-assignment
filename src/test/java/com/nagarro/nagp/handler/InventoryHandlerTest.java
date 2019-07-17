@@ -29,7 +29,7 @@ public class InventoryHandlerTest {
 	private DurableInventoryRepository durableInventoryRepository;
 
 	@Test
-	public void shouldReturnDurableInventoryObjectIfDurableInventoryObjectPassed() {
+	public void shouldReturnInventoryInstanceWithDurableCategroryIfDurableCategoryPassed() {
 		Inventory expectedValue = new Inventory(Category.DURABLE);
 		Mockito.when(this.durableInventoryRepository.save(expectedValue)).thenReturn(expectedValue);
 
@@ -44,7 +44,7 @@ public class InventoryHandlerTest {
 	}
 
 	@Test
-	public void shouldReturnFragileInventoryObjectIfFragileInventoryObjectPassed() {
+	public void shouldReturnInventoryInstanceWithFragileCategroryIfFragileCategoryPassed() {
 		Inventory expectedValue = new Inventory(Category.FRAGILE);
 		Mockito.when(this.fragileInventoryRepository.save(expectedValue)).thenReturn(expectedValue);
 
@@ -58,7 +58,7 @@ public class InventoryHandlerTest {
 	}
 
 	@Test(expected = InvalidRequestException.class)
-	public void shouldThrowExceptionIfNoCategoryPassedInInventory() {
+	public void shouldThrowInvalidRequestExceptionIfNoCategoryPassedInInventoryInstance() {
 		Inventory expectedValue = new Inventory(null);
 
 		this.inventoryHandler.createInventory(expectedValue);

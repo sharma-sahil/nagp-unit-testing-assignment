@@ -52,7 +52,7 @@ public class InventoryHandlerParameterizedTest {
 	}
 
 	@Test
-	public void shouldReturnInventoryObjectWithSameCategory() {
+	public void shouldReturnInventoryInstanceWithSameCategoryThatIsPassedAsInput() {
 
 		Inventory expected = new Inventory(input);
 		Mockito.when(this.durableInventoryRepository.save(expected)).thenReturn(expected);

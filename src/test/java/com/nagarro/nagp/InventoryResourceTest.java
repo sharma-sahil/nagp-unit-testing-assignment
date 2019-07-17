@@ -25,7 +25,7 @@ public class InventoryResourceTest {
 	private InventoryHandler handler;
 
 	@Test(expected = InvalidRequestException.class)
-	public void shouldThrowExceptionIfNullObjectPassed() {
+	public void shouldThrowInvalidRequestExceptionIfNullObjectPassed() {
 		this.inventoryResource.createInventory(null);
 		Mockito.verifyZeroInteractions(this.handler);
 	}
