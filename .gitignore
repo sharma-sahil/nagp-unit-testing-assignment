@@ -1,3 +1,4 @@
+/target/
 src/main/generated-sources/
 !.mvn/wrapper/maven-wrapper.jar
 /src/main/generated-sources/
