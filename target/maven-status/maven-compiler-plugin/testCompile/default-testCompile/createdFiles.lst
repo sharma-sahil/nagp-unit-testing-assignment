@@ -1,0 +1,6 @@
+com\nagarro\nagp\handler\ParameterizedTestRunner.class
+com\nagarro\nagp\repository\DurableInventoryRepositoryTest.class
+com\nagarro\nagp\handler\InventoryHandlerTest.class
+com\nagarro\nagp\InventoryResourceTest.class
+com\nagarro\nagp\repository\FragileInventoryRepositoryTest.class
+com\nagarro\nagp\handler\InventoryHandlerParameterizedTest.class

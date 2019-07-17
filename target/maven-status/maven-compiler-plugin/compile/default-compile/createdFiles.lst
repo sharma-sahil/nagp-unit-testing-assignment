@@ -1,0 +1,9 @@
+com\nagarro\nagp\Inventory.class
+com\nagarro\nagp\repository\RepositoryHelper.class
+com\nagarro\nagp\exception\InvalidRequestException.class
+com\nagarro\nagp\handler\InventoryHandler.class
+com\nagarro\nagp\repository\impl\DurableInventoryRepository.class
+com\nagarro\nagp\InventoryResource.class
+com\nagarro\nagp\domain\Category.class
+com\nagarro\nagp\repository\impl\FragileInventoryRepository.class
+com\nagarro\nagp\repository\IInventoryRepository.class
